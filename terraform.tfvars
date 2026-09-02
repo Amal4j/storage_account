@@ -3,6 +3,11 @@ rg = {
     name     = "AMAL-RG-INSIGHT"
     location = "centralindia"
   }
+  rg2 = {
+name = "kylos_carlose"
+location = "eastus"
+
+  }
 }
 
 sa = {
