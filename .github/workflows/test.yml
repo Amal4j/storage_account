@@ -1,19 +1,16 @@
 name: Terraform Azure Deployment
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-  workflow_dispatch:  
+
+  workflow_dispatch:
+
 jobs:
 
-  # JOB 1
   terraform-check:
     runs-on: ubuntu-latest
-
-    # defaults:
-    #   run:
-    #     working-directory: ./Terraform_code
 
     steps:
 
@@ -38,14 +35,9 @@ jobs:
         run: terraform plan
 
 
-  # JOB 2
   terraform-deploy:
     needs: terraform-check
     runs-on: ubuntu-latest
-
-    # defaults:
-    #   run:
-    #     working-directory: ./Terraform_code
 
     steps:
 
