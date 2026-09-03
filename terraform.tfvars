@@ -4,7 +4,7 @@ rg = {
     location = "centralindia"
   }
   rg2 = {
-name = "kylos_carlose"
+name = "kylos"
 location = "eastus"
 
  }
